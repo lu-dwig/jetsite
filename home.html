@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>plane</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221204183727">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/header/logo.svg" alt="logo" />
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_marign-right-one">
+								<a data-goto="#top" href="#" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item menu__item_marign-right-two">
+								<a data-goto-header data-goto="#booking" href="#" class="menu__link">Booking</a>
+							</li>
+							<li class="menu__item menu__item_marign-right-three">
+								<a data-goto-header data-goto="#private" href="#" class="menu__link">Private Jet
+								</a>
+							</li>
+							<li class="menu__item menu__item_marign-right-four">
+								<a data-goto-header data-goto="#performance" href="#" class="menu__link">Specification
+								</a>
+							</li>
+							<li class="menu__item menu__item_marign-right-five">
+								<a data-goto-header data-goto="#luxury" href="#" class="menu__link">Luxury Charters</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-header data-goto="#membership" href="#" class="menu__link">membership</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__login">
+					<a href="#" class="header__register">Register</a>
+					<a href="#" class="header__sing-in">
+						<p>Sign In</p>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="home__form-block block-form">
+				<form data-dev data-popup-message="#formMessage" action="#" class="block-form__form">
+					<div class="block-form__calendars">
+						<div class="block-form__return">
+							<label for="return">Return</label>
+							<input data-required data-calendar autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Tue 19 Oct" class="input-calendar" />
+							<!-- <div class="block-form__buttons">
+                  <a href="#" class="block-form__prev">Prev</a>
+                  <a href="#" class="block-next">Next</a>
+                </div> -->
+						</div>
+						<button type="submit" class="button">Отправить</button>
+					</div>
+				</form>
+			</div>
+			<a href="./index.html" target="_blank">main page</a>
+		</main>
+		<footer id="footer" class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/footer/logowhite.svg" alt="logo" />
+				</div>
+				<div class="footer__line"></div>
+				<div class="footer__bottom">
+					<div class="footer__links">
+						<a data-goto-header data-goto="#performance" href="#" class="footer__link">SERVICES</a>
+						<a data-goto-header data-goto="#business" href="#" class="footer__link">ABOUT US</a>
+						<a data-goto-header data-goto="#top" href="#" class="footer__link">NEWS
+						</a>
+						<a data-goto-header data-goto="#top" href="#" class="footer__link">CONTACT</a>
+					</div>
+					<p class="footer__copy">© 2021 Air. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="formMessage" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__text">Requirements were sent!</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221204183727"></script>
+</body>
+
+</html>
